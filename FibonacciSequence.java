@@ -5,9 +5,24 @@ public class FibonacciSequence {
         // index 0 1 2 3 4 5 6 7
         // value 0 1 1 2 3 5 8 13
 
+        for (int i = 0; i < 8; i++) {
+            int result = fibo_recursive(i);
+            System.out.println(result);
+        }
 
-        int dp = dp(8);
-        System.out.println(dp);
+        // int dp = dp(8);
+        // System.out.println(dp);
+    }
+
+    /**
+     * Recursive
+     * Time complexity: O(n^2)
+     */
+    private static int fibo_recursive(int n) {
+        if (n <= 1) {
+            return n;
+        }
+        return fibo_recursive(n - 1) + fibo_recursive(n - 2);
     }
 
     /**
