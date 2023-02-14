@@ -1,3 +1,5 @@
+package com.coding.test.practice;
+
 import java.util.*;
 
 public class MapValueToList {
